@@ -15,12 +15,14 @@ This project sets up a virtual cybersecurity lab on my own PC using VirtualBox a
 ## Setup Steps
 1. Installed VirtualBox and 7-Zip on the host.
 2. Created a NAT Network (10.0.0.0/24) under File > Tools > Network.
-<img width="712" height="416" alt="Screenshot 2026-11-04 185433" src="https://github.com/user-attachments/assets/f52d4271-9e3e-4e27-b87c-5bd5365129d0" />
+<img width="921" height="282" alt="Screenshot 2026-11-04 184003" src="https://github.com/user-attachments/assets/45f6ee1e-2249-49ef-bb9e-6cbcd7d77ced" />
+
 
 
 3. Downloaded the Kali VirtualBox image, extracted it with 7-Zip, and added the .vbox file to VirtualBox.
 4. Configured the VM: Adapter 1 attached to NAT Network "NatNetwork", Promiscuous Mode set to Allow All.
-  <img width="980" height="697" alt="Screenshot 2026-11-04 190850" src="https://github.com/user-attachments/assets/e7fb24dd-38e7-4e0c-a54b-e56551fe1c79" />
+  <img width="576" height="356" alt="image" src="https://github.com/user-attachments/assets/028dac7d-f3d6-4a3e-954b-ac4e4599296d" />
+
 
 5. Enabled Shared Clipboard and Drag'n'Drop (Bidirectional) and shared the host Downloads folder with Auto-mount and Full access.
 

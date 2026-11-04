@@ -15,25 +15,25 @@ This project sets up a virtual cybersecurity lab on my own PC using VirtualBox a
 ## Setup Steps
 1. Installed VirtualBox and 7-Zip on the host.
 2. Created a NAT Network (10.0.0.0/24) under File > Tools > Network.
-   ![NAT Network]<img width="730" height="382" alt="Screenshot 2026-11-04 185406" src="https://github.com/user-attachments/assets/a86c6f66-aeb2-4e72-96fe-23445a184288" />
+ <img width="730" height="382" alt="Screenshot 2026-11-04 185406" src="https://github.com/user-attachments/assets/a86c6f66-aeb2-4e72-96fe-23445a184288" />
 
 3. Downloaded the Kali VirtualBox image, extracted it with 7-Zip, and added the .vbox file to VirtualBox.
 4. Configured the VM: Adapter 1 attached to NAT Network "NatNetwork", Promiscuous Mode set to Allow All.
-   ![VM network settings]<img width="980" height="697" alt="Screenshot 2026-11-04 190850" src="https://github.com/user-attachments/assets/e7fb24dd-38e7-4e0c-a54b-e56551fe1c79" />
+  <img width="980" height="697" alt="Screenshot 2026-11-04 190850" src="https://github.com/user-attachments/assets/e7fb24dd-38e7-4e0c-a54b-e56551fe1c79" />
 
 5. Enabled Shared Clipboard and Drag'n'Drop (Bidirectional) and shared the host Downloads folder with Auto-mount and Full access.
 
 6. Set the static IP inside Kali (10.0.0.2/24, gateway 10.0.0.1, DNS 8.8.8.8).
 7. Took a snapshot of the clean installation.
-   ![Snapshot]<img width="1920" height="1080" alt="Screenshot 2026-11-04 194430" src="https://github.com/user-attachments/assets/27c9d558-29b5-483e-bf4b-1561919caa29" />
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 194430" src="https://github.com/user-attachments/assets/27c9d558-29b5-483e-bf4b-1561919caa29" />
 
 
 ## Verification
 - IP address check (`ip a`) shows 10.0.0.2/24 on eth0
-  ![ip a]<img width="475" height="201" alt="image" src="https://github.com/user-attachments/assets/6ae9e103-39ef-44bb-adac-315991b802e0" />
+<img width="475" height="201" alt="image" src="https://github.com/user-attachments/assets/6ae9e103-39ef-44bb-adac-315991b802e0" />
 
 - Internet check: ping to 8.8.8.8 and google.com both succeed
-  ![ping]<img width="485" height="151" alt="image" src="https://github.com/user-attachments/assets/1663b4b1-5449-45df-a5c4-4f7ac02476c7" />
+<img width="485" height="151" alt="image" src="https://github.com/user-attachments/assets/1663b4b1-5449-45df-a5c4-4f7ac02476c7" />
 <img width="516" height="246" alt="image" src="https://github.com/user-attachments/assets/b151bdc3-514f-478c-a101-8714b28c7b3c" />
 
 - Shared folder is visible in Kali as sf_Downloads

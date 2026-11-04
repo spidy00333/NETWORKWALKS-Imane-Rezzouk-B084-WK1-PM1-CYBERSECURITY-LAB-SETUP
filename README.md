@@ -7,8 +7,8 @@ This project sets up a virtual cybersecurity lab on my own PC using VirtualBox a
 
 ## Lab Environment
 - Host OS: [Windows 11]
-- Hypervisor: VirtualBox [version]
-- Attacker VM: Kali Linux 2026.3 (VirtualBox image)
+- Hypervisor: VirtualBox [Version 7.2.4] 
+- Attacker VM: Kali Linux 2026.3 
 - Network: NAT Network "NatNetwork", 10.0.0.0/24, DHCP enabled
 - Kali static IP: 10.0.0.2/24
 
